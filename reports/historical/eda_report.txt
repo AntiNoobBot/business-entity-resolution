@@ -1,0 +1,40 @@
+== SIZES ==
+train_s1   2,206,821
+train_s2   5,034,616
+train_s3   5,285,603
+train_gt   2,206,821
+test_s1    1,732,544
+test_s2    4,887,273
+test_s3    5,082,316
+
+== NULL / EMPTY COUNTS ==
+train_s1 {'entity_id': 0, 'business_name': 0, 'business_address': 0, 'country': 0} empty_name: 0 empty_addr: 0
+train_s2 {'entity_id': 0, 'business_name': 0, 'business_address': 168967, 'country': 0} empty_name: 0 empty_addr: 0
+train_s3 {'entity_id': 0, 'business_name': 0, 'business_address': 175916, 'country': 0} empty_name: 0 empty_addr: 0
+test_s2 {'entity_id': 0, 'business_name': 0, 'business_address': 129408, 'country': 0} empty_name: 0 empty_addr: 0
+
+== COUNTRY COUNTS ==
+train_s1 {'India': 883188, 'US': 1323633}
+train_s2 {'India': 2017799, 'US': 3016817}
+train_s3 {'India': 2115547, 'US': 3170056}
+test_s1 {'France': 259452, 'India': 809986, 'US': 663106}
+test_s2 {'France': 703378, 'India': 2312565, 'US': 1871330}
+test_s3 {'France': 731615, 'India': 2405000, 'US': 1945701}
+
+== EXACT DUPLICATES (same name+address+country) INSIDE A SOURCE ==
+train_s1 duplicated groups: 0
+train_s2 duplicated groups: 25060
+train_s3 duplicated groups: 18381
+
+== GROUND TRUTH STRUCTURE ==
+S1 entities in GT: 2206821 | with >=1 match: 2083574 | singletons: 123247 (5.6%)
+matches per S1 (non-singletons): {'count': 2083574.0, 'null_count': 0.0, 'mean': 3.66599170463828, 'std': 1.526294328366576, 'min': 1.0, '25%': 3.0, '50%': 4.0, '75%': 5.0, 'max': 11.0}
+distribution of #matches: {1: 119157, 2: 375212, 3: 530841, 4: 484115, 5: 321957, 6: 164868, 7: 63968, 8: 18680, 9: 4205, 10: 534, 11: 37}
+avg S2 matches: 1.773 | avg S3 matches: 1.893
+S2/S3 records claimed by MORE THAN ONE S1 (want 0 -> one-owner constraint is valid): 0
+GT ids missing from S2/S3 files: 0
+S2 records matched to some S1: 3,693,619/5,034,616 (73.4%) | S3: 3,944,746/5,285,603 (74.6%)
+
+matched pairs whose country labels DIFFER: 0 of 7638365
+
+[Public archive: record-level examples and following sections omitted.]

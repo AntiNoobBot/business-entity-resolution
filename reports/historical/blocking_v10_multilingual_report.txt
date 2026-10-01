@@ -1,0 +1,45 @@
+== BLOCKING v10: MULTILINGUAL INDIA NAME RETRIEVAL ==
+development bucket: 7
+lockbox bucket untouched: 8
+country processed: India
+embedding device: mps
+v9 input candidates: 3,801,006
+top K per India S1/source: 25
+India S1 records: 8,804
+
+processing multilingual names: India / S2
+index records: 2,017,346
+query records: 8,804
+encoding indexed names...
+encoding query names...
+searching semantic neighbours...
+retrieved pairs: 220,100
+
+processing multilingual names: India / S3
+index records: 2,104,039
+query records: 8,804
+encoding indexed names...
+encoding query names...
+searching semantic neighbours...
+retrieved pairs: 220,100
+
+== RESULT ==
+v9 candidate recall: 96.546693%
+v10 candidate recall: 96.996105%
+increment from multilingual retrieval: +0.449412%
+v10 total candidates: 4,168,110
+multilingual-added candidates: 367,104
+multilingual-added true links: 345
+India multilingual-added true links: 345
+mean candidates per S1: 187.89
+
+== MULTILINGUAL ADDITIONS BY SOURCE ==
+shape: (2, 4)
+┌─────────┬────────┬──────────────────┬──────────────────┐
+│ country ┆ source ┆ added_candidates ┆ added_true_links │
+│ ---     ┆ ---    ┆ ---              ┆ ---              │
+│ str     ┆ str    ┆ u32              ┆ i64              │
+╞═════════╪════════╪══════════════════╪══════════════════╡
+│ India   ┆ S2     ┆ 188123           ┆ 170              │
+│ India   ┆ S3     ┆ 178981           ┆ 175              │
+└─────────┴────────┴──────────────────┴──────────────────┘

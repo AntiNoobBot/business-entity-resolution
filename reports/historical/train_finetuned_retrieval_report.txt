@@ -1,0 +1,9 @@
+== TRAINING FINE-TUNED RETRIEVAL REPORT ==
+training_s1_buckets=0,1
+country=India
+training_s1_records=17,642
+retrieved_pairs=882,100
+pairs_new_to_v5_training=768,318
+true_links_among_new_pairs=10,071
+hard_negatives_among_new_pairs=758,247
+output=train_retrieval_finetuned_india.parquet

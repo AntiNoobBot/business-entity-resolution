@@ -1,0 +1,21 @@
+== ONE-OWNER CONFLICT RESOLUTION ==
+
+== global_0.600 ==
+thresholds: {'India_S2': 0.65, 'India_S3': 0.65, 'US_S2': 0.65, 'US_S3': 0.65}
+selected_pairs_before: 61,467
+conflicting_rec_ids: 13
+pairs_in_conflicts: 27
+selected_pairs_after: 61,453
+macro_f0.5_before: 0.894354
+macro_f0.5_after: 0.894468
+improvement: +0.000114
+
+== tuned_country_source ==
+thresholds: {'India_S2': 0.6, 'India_S3': 0.65, 'US_S2': 0.675, 'US_S3': 0.65}
+selected_pairs_before: 61,628
+conflicting_rec_ids: 14
+pairs_in_conflicts: 29
+selected_pairs_after: 61,613
+macro_f0.5_before: 0.894612
+macro_f0.5_after: 0.894738
+improvement: +0.000126

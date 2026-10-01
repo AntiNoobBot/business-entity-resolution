@@ -1,0 +1,37 @@
+== BUILD LABELLED DEV CANDIDATES v5 ==
+held-out S1 records: 22,184
+held-out true links: 76,767
+processing S2/India...
+processing S2/US...
+processing S3/India...
+processing S3/US...
+tight candidates before fallback: 2,299,068
+loose fallback candidates before ranking: 1,596,481
+computing fuzzy fallback scores...
+
+== RESULT ==
+saved candidates: 2,530,505
+positive candidates: 65,472
+candidate recall: 85.2866%
+positive rate: 2.5873%
+shape: (1, 5)
+┌────────────┬─────────────────┬──────┬───────┬──────┐
+│ s1_records ┆ mean_candidates ┆ p50  ┆ p95   ┆ max  │
+│ ---        ┆ ---             ┆ ---  ┆ ---   ┆ ---  │
+│ u32        ┆ f64             ┆ f64  ┆ f64   ┆ u32  │
+╞════════════╪═════════════════╪══════╪═══════╪══════╡
+│ 22184      ┆ 114.068924      ┆ 66.0 ┆ 380.0 ┆ 1568 │
+└────────────┴─────────────────┴──────┴───────┴──────┘
+
+== CANDIDATES BY COUNTRY / SOURCE ==
+shape: (4, 5)
+┌─────────┬────────┬────────────┬───────────┬───────────────┐
+│ country ┆ source ┆ candidates ┆ positives ┆ positive_rate │
+│ ---     ┆ ---    ┆ ---        ┆ ---       ┆ ---           │
+│ str     ┆ str    ┆ u32        ┆ i32       ┆ f64           │
+╞═════════╪════════╪════════════╪═══════════╪═══════════════╡
+│ India   ┆ S2     ┆ 389032     ┆ 12309     ┆ 0.03164       │
+│ India   ┆ S3     ┆ 422859     ┆ 12790     ┆ 0.030246      │
+│ US      ┆ S2     ┆ 879049     ┆ 20128     ┆ 0.022897      │
+│ US      ┆ S3     ┆ 839565     ┆ 20245     ┆ 0.024114      │
+└─────────┴────────┴────────────┴───────────┴───────────────┘

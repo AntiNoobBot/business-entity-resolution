@@ -1,0 +1,31 @@
+== LIGHTGBM ERROR ANALYSIS ==
+development candidates: 2,530,505
+accepted pairs before one-owner: 59,610
+accepted pairs after one-owner: 59,583
+false positives after one-owner: 1,676
+candidate-level false negatives: 7,565
+true links missed by blocker: 11,295
+
+== FEATURE IMPORTANCE BY GAIN ==
+address_token_set: gain=6361658.90, splits=6127
+name_ratio: gain=1042245.06, splits=5515
+name_token_set: gain=942184.73, splits=5290
+shared_number_count: gain=447101.37, splits=1299
+address_ratio: gain=330501.97, splits=6297
+number_jaccard: gain=277903.79, splits=2201
+number_union_count: gain=241072.57, splits=2535
+name_length_ratio: gain=91832.22, splits=4887
+name_prefix4_exact: gain=32845.74, splits=711
+country_code: gain=28243.68, splits=1110
+address_length_ratio: gain=24920.75, splits=4524
+number_count_exact: gain=24163.09, splits=636
+source_code: gain=20688.52, splits=773
+name_sorted_exact: gain=20600.11, splits=400
+address_token_exact: gain=15291.22, splits=184
+r_addr_missing: gain=11951.98, splits=9
+name_compact_exact: gain=8815.53, splits=243
+tail_exact: gain=7274.23, splits=603
+name_core_exact: gain=405.05, splits=56
+s_addr_missing: gain=0.00, splits=0
+
+[Public archive: record-level examples and following sections omitted.]

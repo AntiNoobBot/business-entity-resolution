@@ -1,0 +1,46 @@
+== BLOCKING v8: CHARACTER ADDRESS RETRIEVAL ==
+development bucket: 7
+lockbox bucket untouched: 8
+development S1 records: 22,184
+true links: 76,767
+v5 candidates: 2,530,505
+top K per S1/source: 25
+character features per slice: 90,000
+
+processing address retrieval: India / S2
+index records: 1,959,918
+query records: 8,804
+
+processing address retrieval: US / S2
+index records: 2,905,668
+query records: 13,380
+
+processing address retrieval: India / S3
+index records: 2,049,572
+query records: 8,804
+
+processing address retrieval: US / S3
+index records: 3,059,088
+query records: 13,380
+
+== RESULT ==
+v5 candidate recall: 85.286647%
+v8 candidate recall: 95.705186%
+recall gain: +10.418539%
+v8 total candidates: 3,468,496
+retrieval-added candidates: 937,991
+retrieval-added true links: 7,998
+mean candidates per S1: 156.35
+
+== RECOVERED LINKS BY COUNTRY / SOURCE ==
+shape: (4, 4)
+┌─────────┬────────┬────────────┬──────────────────────┐
+│ country ┆ source ┆ candidates ┆ true_links_recovered │
+│ ---     ┆ ---    ┆ ---        ┆ ---                  │
+│ str     ┆ str    ┆ u32        ┆ i64                  │
+╞═════════╪════════╪════════════╪══════════════════════╡
+│ India   ┆ S2     ┆ 569096     ┆ 13855                │
+│ India   ┆ S3     ┆ 608612     ┆ 14272                │
+│ US      ┆ S2     ┆ 1159935    ┆ 21889                │
+│ US      ┆ S3     ┆ 1130853    ┆ 23454                │
+└─────────┴────────┴────────────┴──────────────────────┘

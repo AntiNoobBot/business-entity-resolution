@@ -1,0 +1,37 @@
+== BUILD LABELLED TRAIN CANDIDATES v5 ==
+training-sample S1 records: 44,139
+training-sample true links: 153,097
+processing S2/India...
+processing S2/US...
+processing S3/India...
+processing S3/US...
+tight candidates before fallback: 4,551,661
+loose fallback candidates before ranking: 3,189,693
+computing fuzzy fallback scores...
+
+== RESULT ==
+saved candidates: 5,017,353
+positive candidates: 130,776
+candidate recall: 85.4204%
+positive rate: 2.6065%
+shape: (1, 5)
+┌────────────┬─────────────────┬──────┬───────┬──────┐
+│ s1_records ┆ mean_candidates ┆ p50  ┆ p95   ┆ max  │
+│ ---        ┆ ---             ┆ ---  ┆ ---   ┆ ---  │
+│ u32        ┆ f64             ┆ f64  ┆ f64   ┆ u32  │
+╞════════════╪═════════════════╪══════╪═══════╪══════╡
+│ 44139      ┆ 113.671651      ┆ 66.0 ┆ 383.0 ┆ 1659 │
+└────────────┴─────────────────┴──────┴───────┴──────┘
+
+== CANDIDATES BY COUNTRY / SOURCE ==
+shape: (4, 5)
+┌─────────┬────────┬────────────┬───────────┬───────────────┐
+│ country ┆ source ┆ candidates ┆ positives ┆ positive_rate │
+│ ---     ┆ ---    ┆ ---        ┆ ---       ┆ ---           │
+│ str     ┆ str    ┆ u32        ┆ i32       ┆ f64           │
+╞═════════╪════════╪════════════╪═══════════╪═══════════════╡
+│ India   ┆ S2     ┆ 766192     ┆ 24682     ┆ 0.032214      │
+│ India   ┆ S3     ┆ 841580     ┆ 25969     ┆ 0.030857      │
+│ US      ┆ S2     ┆ 1742383    ┆ 40065     ┆ 0.022994      │
+│ US      ┆ S3     ┆ 1667198    ┆ 40060     ┆ 0.024028      │
+└─────────┴────────┴────────────┴───────────┴───────────────┘

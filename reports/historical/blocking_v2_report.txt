@@ -1,0 +1,170 @@
+== BLOCKING v2: HELD-OUT EVALUATION ==
+Held-out S1 sample: 22,184
+True S2/S3 links: 76,767
+01 exact normalized keys | S2/India: 96,917 raw candidates
+02 + rare full name tokens | S2/India: 208,402 raw candidates
+03 + rare name prefixes | S2/India: 30,845 raw candidates
+04 + rare address numbers | S2/India: 17,542 raw candidates
+05 + rare address words | S2/India: 479,004 raw candidates
+01 exact normalized keys | S2/US: 385,801 raw candidates
+02 + rare full name tokens | S2/US: 323,168 raw candidates
+03 + rare name prefixes | S2/US: 48,239 raw candidates
+04 + rare address numbers | S2/US: 113,920 raw candidates
+05 + rare address words | S2/US: 354,676 raw candidates
+01 exact normalized keys | S3/India: 150,282 raw candidates
+02 + rare full name tokens | S3/India: 208,528 raw candidates
+03 + rare name prefixes | S3/India: 29,458 raw candidates
+04 + rare address numbers | S3/India: 16,742 raw candidates
+05 + rare address words | S3/India: 487,153 raw candidates
+01 exact normalized keys | S3/US: 381,351 raw candidates
+02 + rare full name tokens | S3/US: 325,403 raw candidates
+03 + rare name prefixes | S3/US: 47,817 raw candidates
+04 + rare address numbers | S3/US: 108,187 raw candidates
+05 + rare address words | S3/US: 306,229 raw candidates
+
+== CUMULATIVE TRUE-PAIR RECALL ==
+
+01 exact normalized keys
+shape: (1, 3)
+┌────────────┬───────────┬──────────┐
+│ true_pairs ┆ recovered ┆ recall   │
+│ ---        ┆ ---       ┆ ---      │
+│ u32        ┆ u32       ┆ f64      │
+╞════════════╪═══════════╪══════════╡
+│ 76767      ┆ 51118     ┆ 0.665885 │
+└────────────┴───────────┴──────────┘
+shape: (4, 4)
+┌─────────┬─────┬────────────┬──────────┐
+│ country ┆ src ┆ true_pairs ┆ recall   │
+│ ---     ┆ --- ┆ ---        ┆ ---      │
+│ str     ┆ str ┆ u32        ┆ f64      │
+╞═════════╪═════╪════════════╪══════════╡
+│ India   ┆ S2  ┆ 14766      ┆ 0.601382 │
+│ India   ┆ S3  ┆ 15571      ┆ 0.570997 │
+│ US      ┆ S2  ┆ 22395      ┆ 0.788346 │
+│ US      ┆ S3  ┆ 24035      ┆ 0.652881 │
+└─────────┴─────┴────────────┴──────────┘
+candidate-size per S1: shape: (1, 4)
+┌───────────┬─────┬───────┬──────┐
+│ mean      ┆ p50 ┆ p95   ┆ max  │
+│ ---       ┆ --- ┆ ---   ┆ ---  │
+│ f64       ┆ f64 ┆ f64   ┆ u32  │
+╞═══════════╪═════╪═══════╪══════╡
+│ 45.724441 ┆ 5.0 ┆ 196.0 ┆ 1552 │
+└───────────┴─────┴───────┴──────┘
+
+02 + rare full name tokens
+shape: (1, 3)
+┌────────────┬───────────┬──────────┐
+│ true_pairs ┆ recovered ┆ recall   │
+│ ---        ┆ ---       ┆ ---      │
+│ u32        ┆ u32       ┆ f64      │
+╞════════════╪═══════════╪══════════╡
+│ 76767      ┆ 57154     ┆ 0.744513 │
+└────────────┴───────────┴──────────┘
+shape: (4, 4)
+┌─────────┬─────┬────────────┬──────────┐
+│ country ┆ src ┆ true_pairs ┆ recall   │
+│ ---     ┆ --- ┆ ---        ┆ ---      │
+│ str     ┆ str ┆ u32        ┆ f64      │
+╞═════════╪═════╪════════════╪══════════╡
+│ India   ┆ S2  ┆ 14766      ┆ 0.679263 │
+│ India   ┆ S3  ┆ 15571      ┆ 0.663734 │
+│ US      ┆ S2  ┆ 22395      ┆ 0.845457 │
+│ US      ┆ S3  ┆ 24035      ┆ 0.742875 │
+└─────────┴─────┴────────────┴──────────┘
+candidate-size per S1: shape: (1, 4)
+┌───────────┬──────┬───────┬──────┐
+│ mean      ┆ p50  ┆ p95   ┆ max  │
+│ ---       ┆ ---  ┆ ---   ┆ ---  │
+│ f64       ┆ f64  ┆ f64   ┆ u32  │
+╞═══════════╪══════╪═══════╪══════╡
+│ 92.389876 ┆ 35.0 ┆ 355.0 ┆ 1552 │
+└───────────┴──────┴───────┴──────┘
+
+03 + rare name prefixes
+shape: (1, 3)
+┌────────────┬───────────┬─────────┐
+│ true_pairs ┆ recovered ┆ recall  │
+│ ---        ┆ ---       ┆ ---     │
+│ u32        ┆ u32       ┆ f64     │
+╞════════════╪═══════════╪═════════╡
+│ 76767      ┆ 57239     ┆ 0.74562 │
+└────────────┴───────────┴─────────┘
+shape: (4, 4)
+┌─────────┬─────┬────────────┬──────────┐
+│ country ┆ src ┆ true_pairs ┆ recall   │
+│ ---     ┆ --- ┆ ---        ┆ ---      │
+│ str     ┆ str ┆ u32        ┆ f64      │
+╞═════════╪═════╪════════════╪══════════╡
+│ India   ┆ S2  ┆ 14766      ┆ 0.68055  │
+│ India   ┆ S3  ┆ 15571      ┆ 0.664826 │
+│ US      ┆ S2  ┆ 22395      ┆ 0.846126 │
+│ US      ┆ S3  ┆ 24035      ┆ 0.74429  │
+└─────────┴─────┴────────────┴──────────┘
+candidate-size per S1: shape: (1, 4)
+┌───────────┬──────┬───────┬──────┐
+│ mean      ┆ p50  ┆ p95   ┆ max  │
+│ ---       ┆ ---  ┆ ---   ┆ ---  │
+│ f64       ┆ f64  ┆ f64   ┆ u32  │
+╞═══════════╪══════╪═══════╪══════╡
+│ 95.480391 ┆ 43.0 ┆ 359.0 ┆ 1552 │
+└───────────┴──────┴───────┴──────┘
+
+04 + rare address numbers
+shape: (1, 3)
+┌────────────┬───────────┬──────────┐
+│ true_pairs ┆ recovered ┆ recall   │
+│ ---        ┆ ---       ┆ ---      │
+│ u32        ┆ u32       ┆ f64      │
+╞════════════╪═══════════╪══════════╡
+│ 76767      ┆ 58846     ┆ 0.766553 │
+└────────────┴───────────┴──────────┘
+shape: (4, 4)
+┌─────────┬─────┬────────────┬──────────┐
+│ country ┆ src ┆ true_pairs ┆ recall   │
+│ ---     ┆ --- ┆ ---        ┆ ---      │
+│ str     ┆ str ┆ u32        ┆ f64      │
+╞═════════╪═════╪════════════╪══════════╡
+│ India   ┆ S2  ┆ 14766      ┆ 0.694636 │
+│ India   ┆ S3  ┆ 15571      ┆ 0.676899 │
+│ US      ┆ S2  ┆ 22395      ┆ 0.862514 │
+│ US      ┆ S3  ┆ 24035      ┆ 0.779405 │
+└─────────┴─────┴────────────┴──────────┘
+candidate-size per S1: shape: (1, 4)
+┌────────────┬──────┬───────┬──────┐
+│ mean       ┆ p50  ┆ p95   ┆ max  │
+│ ---        ┆ ---  ┆ ---   ┆ ---  │
+│ f64        ┆ f64  ┆ f64   ┆ u32  │
+╞════════════╪══════╪═══════╪══════╡
+│ 106.726515 ┆ 61.0 ┆ 373.0 ┆ 1568 │
+└────────────┴──────┴───────┴──────┘
+
+05 + rare address words
+shape: (1, 3)
+┌────────────┬───────────┬──────────┐
+│ true_pairs ┆ recovered ┆ recall   │
+│ ---        ┆ ---       ┆ ---      │
+│ u32        ┆ u32       ┆ f64      │
+╞════════════╪═══════════╪══════════╡
+│ 76767      ┆ 65892     ┆ 0.858338 │
+└────────────┴───────────┴──────────┘
+shape: (4, 4)
+┌─────────┬─────┬────────────┬──────────┐
+│ country ┆ src ┆ true_pairs ┆ recall   │
+│ ---     ┆ --- ┆ ---        ┆ ---      │
+│ str     ┆ str ┆ u32        ┆ f64      │
+╞═════════╪═════╪════════════╪══════════╡
+│ India   ┆ S2  ┆ 14766      ┆ 0.846404 │
+│ India   ┆ S3  ┆ 15571      ┆ 0.833794 │
+│ US      ┆ S2  ┆ 22395      ┆ 0.899397 │
+│ US      ┆ S3  ┆ 24035      ┆ 0.843312 │
+└─────────┴─────┴────────────┴──────────┘
+candidate-size per S1: shape: (1, 4)
+┌────────────┬───────┬───────┬──────┐
+│ mean       ┆ p50   ┆ p95   ┆ max  │
+│ ---        ┆ ---   ┆ ---   ┆ ---  │
+│ f64        ┆ f64   ┆ f64   ┆ u32  │
+╞════════════╪═══════╪═══════╪══════╡
+│ 178.689416 ┆ 127.0 ┆ 565.0 ┆ 1568 │
+└────────────┴───────┴───────┴──────┘

@@ -1,0 +1,22 @@
+== COUNTRY / SOURCE THRESHOLD TUNING ==
+global_threshold=0.650 macro_f0.5=0.894354
+
+PASS 1
+India_S2: threshold=0.600 macro_f0.5=0.894557
+India_S3: threshold=0.650 macro_f0.5=0.894557
+US_S2: threshold=0.675 macro_f0.5=0.894612
+US_S3: threshold=0.650 macro_f0.5=0.894612
+
+PASS 2
+India_S2: threshold=0.600 macro_f0.5=0.894612
+India_S3: threshold=0.650 macro_f0.5=0.894612
+US_S2: threshold=0.675 macro_f0.5=0.894612
+US_S3: threshold=0.650 macro_f0.5=0.894612
+
+== FINAL ==
+India_S2_threshold=0.600
+India_S3_threshold=0.650
+US_S2_threshold=0.675
+US_S3_threshold=0.650
+tuned_macro_f0.5=0.894612
+improvement=+0.000258

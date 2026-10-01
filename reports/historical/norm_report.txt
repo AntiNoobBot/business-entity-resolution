@@ -1,0 +1,18 @@
+learned final-address-component alias entries: 87
+India: 46 entries; top: mh->maharashtra, महाराष्ट्र->maharashtra, dl->delhi, दिल्ली->delhi, up->uttar pradesh, ka->karnataka, tn->tamil nadu, wb->west bengal, gj->gujarat, उत्तर प्रदेश->uttar pradesh, ಕರ್ನಾಟಕ->karnataka, tg->telangana, தமிழ்நாடு->tamil nadu, ગુજરાત->gujarat, পশ্চিমবঙ্গ->west bengal, hr->haryana, rj->rajasthan, తెలంగాణ->telangana, kl->kerala, हरियाणा->haryana, mp->madhya pradesh, राजस्थान->rajasthan, br->bihar, keralam->kerala, കേരളം->kerala
+US: 41 entries; top: texas->tx, new york->ny, north carolina->nc, ohio->oh, illinois->il, virginia->va, tennessee->tn, massachusetts->ma, arizona->az, indiana->in, washington->wa, maryland->md, california->ca, alabama->al, wisconsin->wi, minnesota->mn, oregon->or, kentucky->ky, arkansas->ar, missouri->mo, utah->ut, iowa->ia, oklahoma->ok, connecticut->ct, west virginia->wv
+
+== NORMALIZATION v2 TRUE-PAIR KEY COVERAGE (held-out sample) ==
+shape: (4, 13)
+┌─────────┬─────┬───────┬───────────┬──────────┬────────────┬──────────┬────────────┬─────────────────┬──────────────┬───────────────┬──────────────┬──────────────┐
+│ country ┆ src ┆ n     ┆ name_core ┆ name_any ┆ tail_alias ┆ body     ┆ body_token ┆ addr_exact_tail ┆ addr_any_key ┆ name_and_addr ┆ name_or_addr ┆ addr_missing │
+│ ---     ┆ --- ┆ ---   ┆ ---       ┆ ---      ┆ ---        ┆ ---      ┆ ---        ┆ ---             ┆ ---          ┆ ---           ┆ ---          ┆ ---          │
+│ str     ┆ str ┆ u32   ┆ f64       ┆ f64      ┆ f64        ┆ f64      ┆ f64        ┆ f64             ┆ f64          ┆ f64           ┆ f64          ┆ f64          │
+╞═════════╪═════╪═══════╪═══════════╪══════════╪════════════╪══════════╪════════════╪═════════════════╪══════════════╪═══════════════╪══════════════╪══════════════╡
+│ India   ┆ S2  ┆ 57524 ┆ 0.440773  ┆ 0.493429 ┆ 0.767593   ┆ 0.163793 ┆ 0.211234   ┆ 0.161828        ┆ 0.211234     ┆ 0.099976      ┆ 0.604687     ┆ 0.03868      │
+│ India   ┆ S3  ┆ 61987 ┆ 0.456676  ┆ 0.510591 ┆ 0.736896   ┆ 0.188249 ┆ 0.243567   ┆ 0.186523        ┆ 0.243567     ┆ 0.108974      ┆ 0.645184     ┆ 0.038508     │
+│ US      ┆ S2  ┆ 86898 ┆ 0.546871  ┆ 0.633237 ┆ 0.715575   ┆ 0.288131 ┆ 0.314392   ┆ 0.287003        ┆ 0.314392     ┆ 0.199095      ┆ 0.748533     ┆ 0.050231     │
+│ US      ┆ S3  ┆ 92349 ┆ 0.5117    ┆ 0.5926   ┆ 0.714041   ┆ 0.331655 ┆ 0.361249   ┆ 0.330724        ┆ 0.361249     ┆ 0.199093      ┆ 0.754756     ┆ 0.045772     │
+└─────────┴─────┴───────┴───────────┴──────────┴────────────┴──────────┴────────────┴─────────────────┴──────────────┴───────────────┴──────────────┴──────────────┘
+
+[Public archive: record-level examples and following sections omitted.]

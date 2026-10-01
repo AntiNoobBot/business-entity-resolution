@@ -1,0 +1,30 @@
+== BLOCKING v9: CHARACTER NAME RETRIEVAL ==
+development bucket: 7
+lockbox bucket untouched: 8
+v8 input candidates: 3,468,496
+top K per S1/source: 15
+
+processing name retrieval: India / S2
+index records: 2,016,799
+query records: 8,804
+
+processing name retrieval: US / S2
+index records: 3,009,388
+query records: 13,360
+
+processing name retrieval: India / S3
+index records: 2,103,514
+query records: 8,804
+
+processing name retrieval: US / S3
+index records: 3,159,730
+query records: 13,360
+
+== RESULT ==
+v8 candidate recall: 95.705186%
+v9 candidate recall: 96.546693%
+increment from name retrieval: +0.841507%
+v9 total candidates: 3,801,006
+name-retrieval-added candidates: 332,510
+name-retrieval-added true links: 646
+mean candidates per S1: 171.34

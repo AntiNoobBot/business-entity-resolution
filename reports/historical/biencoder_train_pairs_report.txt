@@ -1,0 +1,39 @@
+== BI-ENCODER TRAINING PAIRS ==
+training S1 hash buckets: 0, 1
+development bucket excluded: 7
+lockbox bucket untouched: 8
+training S1 records: 44,139
+positive training pairs: 152,891
+
+== PAIRS BY COUNTRY / SOURCE ==
+shape: (4, 3)
+┌─────────┬────────┬────────────────┐
+│ country ┆ source ┆ positive_pairs │
+│ ---     ┆ ---    ┆ ---            │
+│ str     ┆ str    ┆ u32            │
+╞═════════╪════════╪════════════════╡
+│ India   ┆ S2     ┆ 29659          │
+│ India   ┆ S3     ┆ 31429          │
+│ US      ┆ S2     ┆ 44610          │
+│ US      ┆ S3     ┆ 47193          │
+└─────────┴────────┴────────────────┘
+
+== CROSS-SCRIPT POSITIVES ==
+shape: (1, 4)
+┌────────────────┬───────────────┬───────────────────┬───────────────────────────┐
+│ positive_pairs ┆ s1_indic_rate ┆ record_indic_rate ┆ name_script_mismatch_rate │
+│ ---            ┆ ---           ┆ ---               ┆ ---                       │
+│ u32            ┆ f64           ┆ f64               ┆ f64                       │
+╞════════════════╪═══════════════╪═══════════════════╪═══════════════════════════╡
+│ 152891         ┆ 0.0           ┆ 0.055647          ┆ 0.055647                  │
+└────────────────┴───────────────┴───────────────────┴───────────────────────────┘
+
+== INDIA CROSS-SCRIPT POSITIVES ==
+shape: (1, 2)
+┌──────────────────────┬─────────────────────────────────┐
+│ india_positive_pairs ┆ india_name_script_mismatch_rat… │
+│ ---                  ┆ ---                             │
+│ u32                  ┆ f64                             │
+╞══════════════════════╪═════════════════════════════════╡
+│ 61088                ┆ 0.139274                        │
+└──────────────────────┴─────────────────────────────────┘

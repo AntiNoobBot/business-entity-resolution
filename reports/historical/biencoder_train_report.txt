@@ -1,0 +1,14 @@
+== BI-ENCODER FINE-TUNING REPORT ==
+base_model=intfloat/multilingual-e5-small
+device=mps
+training_s1_hash_buckets=0,1
+development_bucket_excluded=7
+lockbox_bucket_untouched=8
+positive_pairs=152,891
+batch_size=32
+epochs=1
+max_sequence_length=192
+learning_rate=2e-05
+warmup_steps=477
+elapsed_minutes=103.50
+model_path=models/biencoder_e5_v1

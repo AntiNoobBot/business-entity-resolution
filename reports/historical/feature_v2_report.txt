@@ -1,0 +1,5 @@
+== FEATURE v2 BUILD REPORT ==
+train_rows=5,017,353
+train_output=train_features_v2.parquet
+dev_rows=2,530,505
+dev_output=dev_features_v2.parquet

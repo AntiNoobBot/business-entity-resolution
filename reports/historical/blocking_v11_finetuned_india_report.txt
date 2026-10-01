@@ -1,0 +1,47 @@
+== BLOCKING v11: FINE-TUNED INDIA RETRIEVAL ==
+fine-tuned model: models/biencoder_e5_v1
+development bucket: 7
+lockbox bucket untouched: 8
+country processed: India
+embedding device: mps
+v10 input candidates: 4,168,110
+top K per India S1/source: 25
+India S1 records: 8,804
+
+processing fine-tuned retrieval: India / S2
+index records: 2,017,799
+query records: 8,804
+encoding indexed records...
+building ANN index; this stage has no progress bar...
+encoding query records...
+retrieving top candidates...
+retrieved pairs: 220,100
+
+processing fine-tuned retrieval: India / S3
+index records: 2,115,547
+query records: 8,804
+encoding indexed records...
+building ANN index; this stage has no progress bar...
+encoding query records...
+retrieving top candidates...
+retrieved pairs: 220,100
+
+== RESULT ==
+v10 candidate recall: 96.996105%
+v11 candidate recall: 98.944859%
+increment from fine-tuned retrieval: +1.948754%
+v11 total candidates: 4,533,116
+fine-tuned-added candidates: 365,006
+fine-tuned-added true links: 1,496
+mean candidates per S1: 204.34
+
+== FINE-TUNED ADDITIONS BY SOURCE ==
+shape: (2, 4)
+┌─────────┬────────┬──────────────────┬──────────────────┐
+│ country ┆ source ┆ added_candidates ┆ added_true_links │
+│ ---     ┆ ---    ┆ ---              ┆ ---              │
+│ str     ┆ str    ┆ u32              ┆ i64              │
+╞═════════╪════════╪══════════════════╪══════════════════╡
+│ India   ┆ S2     ┆ 184433           ┆ 647              │
+│ India   ┆ S3     ┆ 180573           ┆ 849              │
+└─────────┴────────┴──────────────────┴──────────────────┘
