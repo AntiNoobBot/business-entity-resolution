@@ -1,0 +1,12 @@
+{
+  "dev_bucket": 7,
+  "dev_s1": 22184,
+  "lockbox_bucket": 8,
+  "lockbox_used": false,
+  "train_buckets": [
+    0,
+    1
+  ],
+  "train_s1": 44139,
+  "training_extra_pairs": 768318
+}

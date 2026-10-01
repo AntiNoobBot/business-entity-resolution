@@ -1,0 +1,25 @@
+{
+  "countries": {
+    "France": {
+      "models": [
+        "lgbm_v2.txt"
+      ],
+      "threshold": 0.25
+    },
+    "India": {
+      "models": [
+        "lgbm_v2.txt",
+        "upgrade_trial_02/models/lgbm_hardneg.txt"
+      ],
+      "threshold": 0.25
+    },
+    "US": {
+      "models": [
+        "lgbm_v2.txt",
+        "upgrade_trial_02/models/lgbm_hardneg.txt"
+      ],
+      "threshold": 0.25
+    }
+  },
+  "purpose": "Retain low-floor scores for dev-validated final threshold selection without re-inference"
+}

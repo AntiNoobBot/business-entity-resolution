@@ -1,0 +1,32 @@
+{
+  "config": {
+    "M": 16,
+    "ef_construction": 200,
+    "ef_search": 100,
+    "finetuned_max_length": 192,
+    "passage_prefix": "passage: ",
+    "query_prefix": "query: ",
+    "top_k": 25
+  },
+  "counts": {
+    "s1": 809986,
+    "s2": 2312565,
+    "s3": 2405000
+  },
+  "files": {
+    "inputs/test_India_s1.parquet": "02c1012199f13a7352f0d9d94260c95ca199dc633ec83775d27def35d3ee1d6e",
+    "inputs/test_India_s2.parquet": "0cdf0d0bf8877cbf824c044080f1635727ee8aa3a3949ffe657fa671bdb5969e",
+    "inputs/test_India_s3.parquet": "d3b0006222033e707912895cfb8b637d25308e6ea05af06df1815f3a090e8220",
+    "models/finetuned_e5/1_Pooling/config.json": "4fef0a7e8c8ee36e74c0fad89bab60ade72324442d43f559ea219bb7c2580710",
+    "models/finetuned_e5/2_Normalize/config.json": "cdb09dfca347a56aa2d691744e38d5ad3c7cbc2834e7181272b9a15328b82524",
+    "models/finetuned_e5/README.md": "bce00f88855c84bf142f5f1982f7b893433420592c22bb316d41f3d8555062e9",
+    "models/finetuned_e5/config.json": "ed1dd9501f16f7bd98fb240449d4b1a283da654517eb1938ebd8d0104056c145",
+    "models/finetuned_e5/config_sentence_transformers.json": "6c07ad23c103d7f69f69b80e31892d59720daee20e70f83a43b55958b8e7bc58",
+    "models/finetuned_e5/model.safetensors": "3222398480106fdb359687a9c27625db003141068039139e928522b0e31d4ca5",
+    "models/finetuned_e5/modules.json": "3d02572a0455b832de67fb8e63a54981bc7e8b46e337c95e917bd8122a533bfd",
+    "models/finetuned_e5/sentence_bert_config.json": "3084164002c0bca01b0259c5327123803fce32e660a57feb93184ffead186fc8",
+    "models/finetuned_e5/tokenizer.json": "013ee4d5884a2e49945b7181b918285367b7e2ebcba843106ce22e2635bb4a8a",
+    "models/finetuned_e5/tokenizer_config.json": "71ab1498315ee1915b6de5fff8eb889835df8e485ac40b20c1de29838301ed31"
+  },
+  "purpose": "Existing fine-tuned model on Mac, test India only"
+}

@@ -1,0 +1,22 @@
+{
+  "candidate_file": "submission_trial_fast_01/candidate_pairs.tsv",
+  "candidate_input_sha256": {
+    "trial_submission_v11/address_char_France_S2.parquet": "87f77a06ebbe6f54caa189ab0d51ade8570700a39be801e81ea37caa2fc470fc",
+    "trial_submission_v11/address_char_France_S3.parquet": "62c5fbd4161efe750471a86936f44b33feacd70f26dd11414683fdb8105bfe26",
+    "trial_submission_v11/address_char_India_S2.parquet": "bccec91598dd644dac198088922e30b50b0809e0e457984b409ea33e91dd61b6",
+    "trial_submission_v11/address_char_India_S3.parquet": "0e6833cdd60652f0fab06d700bd66a838acadc5a0a999e6476c9eb3510b8742f",
+    "trial_submission_v11/address_char_US_S2.parquet": "e3a523350de5cb9ee78abd7ef57296b3665538dfd2b75daeff5ef3e434104d5b",
+    "trial_submission_v11/address_char_US_S3.parquet": "3fd5f0e43c1091a190cf3770ca5222a10eb38b878ef4076314c5b23a80e62df9"
+  },
+  "candidate_sha256": "57e0d2576275945cda5df67d19f9c16eae7185fa6004f5a31626a4e3a61fd73d",
+  "elapsed_minutes": 0.3905355006999647,
+  "input_pair_rows": 86627200,
+  "matching_file": "submission_trial_fast_01/matching_results.tsv",
+  "matching_sha256": "4b16273e94471b2a8d8f076e269766f1307e41ca1cc3281fddeeab4379f68fde",
+  "s1_rows": 1732544,
+  "scratch_directory": "submission_trial_fast_01/candidate_export_work",
+  "selected_links_checked_as_subset": 4922502,
+  "status": "PASS",
+  "unique_candidate_pairs": 86627200,
+  "validation": "Exporter checks: full S1 coverage, unique rows/lists, valid source prefixes, every match is a candidate. Test target-ID membership was checked for every pair by the completed scoring stage."
+}

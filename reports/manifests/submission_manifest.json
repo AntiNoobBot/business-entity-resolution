@@ -1,0 +1,18 @@
+{
+  "candidate_inputs": [
+    "trial_submission_v11/address_char_India_S3.parquet",
+    "trial_submission_v11/address_char_US_S3.parquet",
+    "trial_submission_v11/address_char_France_S3.parquet",
+    "trial_submission_v11/address_char_France_S2.parquet",
+    "trial_submission_v11/address_char_India_S2.parquet",
+    "trial_submission_v11/address_char_US_S2.parquet"
+  ],
+  "france": "Legacy non-India feature code and unvalidated 0.65 fallback threshold.",
+  "matching_sha256": "4b16273e94471b2a8d8f076e269766f1307e41ca1cc3281fddeeab4379f68fde",
+  "missing_address_slices": [],
+  "recipe": "Deadline trial: supplied retrieval channels + existing LightGBM v2 + one owner.",
+  "score": "UNKNOWN: not the V11 oracle score or a measured leaderboard score.",
+  "scored_directory": "trial_deadline_scores_fast",
+  "selected_pairs": 4922502,
+  "test_s1_rows": 1732544
+}

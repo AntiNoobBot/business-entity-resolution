@@ -1,0 +1,27 @@
+{
+  "countries": {
+    "France": {
+      "models": [
+        "lgbm_v2.txt"
+      ],
+      "threshold": 0.65
+    },
+    "India": {
+      "models": [
+        "lgbm_v2.txt",
+        "upgrade_trial_02/models/lgbm_hardneg.txt"
+      ],
+      "threshold": 0.7
+    },
+    "US": {
+      "models": [
+        "lgbm_v2.txt",
+        "upgrade_trial_02/models/lgbm_hardneg.txt"
+      ],
+      "threshold": 0.7
+    }
+  },
+  "dev_macro_f05": 0.9312823859417719,
+  "dev_recipe": "address_rules",
+  "france": "Unseen country: retain old model and .65 threshold; no France validation labels"
+}

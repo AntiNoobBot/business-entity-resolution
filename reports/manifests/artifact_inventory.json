@@ -1,0 +1,58 @@
+[
+  {
+    "path": "lgbm_baseline.txt",
+    "bytes": 4945200,
+    "sha256": "b3819905732a7be15571c572bd5c13978f3101a14c650dbe8d21fb8e60ed6e85",
+    "included": false,
+    "reason": "Removed during owner-authorized post-challenge cleanup; fingerprint only."
+  },
+  {
+    "path": "lgbm_v2.txt",
+    "bytes": 4945465,
+    "sha256": "416619af74b60bb14d5808073739a579b28255c6a6ea275931bad95ca5fc90c0",
+    "included": false,
+    "reason": "Removed during owner-authorized post-challenge cleanup; fingerprint only."
+  },
+  {
+    "path": "lgbm_v3.txt",
+    "bytes": 9884843,
+    "sha256": "6f5461a329ca704d1d930be623f9d9ce0e059d0eab3e36d5a990089905f311ac",
+    "included": false,
+    "reason": "Removed during owner-authorized post-challenge cleanup; fingerprint only."
+  },
+  {
+    "path": "upgrade_trial_02/models/lgbm_hardneg.txt",
+    "bytes": 4569886,
+    "sha256": "2d05c1e420af7489c88ecec8bff7093872210171bf60a02e56ab8c0bee29bff1",
+    "included": false,
+    "reason": "Removed during owner-authorized post-challenge cleanup; fingerprint only."
+  },
+  {
+    "path": "models/biencoder_e5_v1/model.safetensors",
+    "bytes": 470637416,
+    "sha256": "3222398480106fdb359687a9c27625db003141068039139e928522b0e31d4ca5",
+    "included": false,
+    "reason": "Removed during owner-authorized post-challenge cleanup; fingerprint only."
+  },
+  {
+    "path": "submission_trial_fast_01/matching_results.tsv",
+    "bytes": 85931612,
+    "sha256": "4b16273e94471b2a8d8f076e269766f1307e41ca1cc3281fddeeab4379f68fde",
+    "included": false,
+    "reason": "Removed during owner-authorized post-challenge cleanup; fingerprint only."
+  },
+  {
+    "path": "submission_trial_fast_01/candidate_pairs.tsv",
+    "bytes": 1138895714,
+    "sha256": "57e0d2576275945cda5df67d19f9c16eae7185fa6004f5a31626a4e3a61fd73d",
+    "included": false,
+    "reason": "Removed during owner-authorized post-challenge cleanup; fingerprint only."
+  },
+  {
+    "path": "submission_trial_fast_01/selected_pairs.parquet",
+    "bytes": 80652250,
+    "sha256": "a960a6d6f1e5b5de4a5ccc76d731a816097ad5d90d0f2b8f1aa7ebd1ef5fd98c",
+    "included": false,
+    "reason": "Removed during owner-authorized post-challenge cleanup; fingerprint only."
+  }
+]
