@@ -1,0 +1,13 @@
+# Reconstructed from preserved imports. Original environment was deleted.
+# These are NOT the exact versions used to produce the historical results.
+numpy
+polars
+pyarrow
+lightgbm
+rapidfuzz
+text-unidecode
+psutil
+scipy
+scikit-learn
+sparse-dot-topn
+

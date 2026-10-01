@@ -1,0 +1,8 @@
+-r legacy.txt
+torch
+sentence-transformers
+transformers
+hnswlib
+datasets
+accelerate>=1.1.0
+
