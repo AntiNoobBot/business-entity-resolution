@@ -1,0 +1,5 @@
+# The public metric library and synthetic demo need only Python 3.12+.
+# Install the package with: python -m pip install -e .
+# Historical ML experiments require requirements/legacy.txt and optionally
+# requirements/neural.txt. Those are reconstructed dependency lists, not locks.
+

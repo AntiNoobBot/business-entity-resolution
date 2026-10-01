@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "business-entity-resolution-lab"
+version = "0.1.0"
+description = "Business entity resolution experiments, evidence, and transparent F0.5 evaluation"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+authors = [{name = "Smith Ray"}]
+dependencies = []
+keywords = ["entity-resolution", "record-linkage", "lightgbm", "retrieval", "multilingual"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.scripts]
+er-lab = "er_lab.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
